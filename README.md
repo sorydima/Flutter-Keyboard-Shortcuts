@@ -1,13 +1,13 @@
 # Flutter Keyboard Shortcuts
 
-Keyboard shortcuts to add where you want
+Keyboard shortcuts to add where you want.
 
 ![](basic_example.gif)
 
 ## Example
 
 On controlLeft + key P are pressed, user navigate to SecondPage()
-helpLabel will be display on help menu
+helpLabel will be display on help menu.
 ```dart
     KeyBoardShortcuts(
         keysToPress: {LogicalKeyboardKey.controlLeft, LogicalKeyboardKey.keyP},
@@ -33,7 +33,7 @@ helpLabel will be display on help menu
       ),
 ```
 
-If globalShortcuts is set to true, user can use Home Button to go on Homepage, up and down button to go on top or bottom of the page and escape to go on last page
+If globalShortcuts is set to true, user can use Home Button to go on Homepage, up and down button to go on top or bottom of the page and escape to go on last page.
 ```dart
     KeyBoardShortcuts(
         globalShortcuts: true,
@@ -55,12 +55,12 @@ If globalShortcuts is set to true, user can use Home Button to go on Homepage, u
 ```
 
 
-initShortCuts() is used to customize shortcuts, you can set home page, title of help menu, icon on custom shortcuts and custom help menu
+initShortCuts() is used to customize shortcuts, you can set home page, title of help menu, icon on custom shortcuts and custom help menu.
 ```dart
     initShortCuts(HomePage(), helpTitle : "Help Menu", helpIcon : Icons.menu);
 ```
 
-You can also use initShortCuts to create your own global shortcuts, they will be allow in all page were globalShortcuts is true without rewriting these shortcuts
+You can also use initShortCuts to create your own global shortcuts, they will be allow in all page were globalShortcuts is true without rewriting these shortcuts.
 ```dart
   initShortCuts(
     HomePage(),
